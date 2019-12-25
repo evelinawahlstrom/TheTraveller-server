@@ -2,7 +2,7 @@
  
 ## What this project is about :woman_technologist: 
 
-*OBS! IN PROGRESSS*
+*OBS! IN PROGRESS*
 
 I am currently working on this project to showcase my skills on both frontend + backend, making a fullstack application.
 
