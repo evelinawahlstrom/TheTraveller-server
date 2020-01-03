@@ -51,8 +51,14 @@ db.sync({ force: true })
   })
   .then(() => {
     const imageDescriptions = [
-      { name: "Test", picture: "https://onestep4ward.com/wp-content/uploads/2019/06/Travel.jpg",userId: 1 } ]
+      { name: "Picture 1", picture: "https://onestep4ward.com/wp-content/uploads/2019/06/Travel.jpg", userId: 1 },
+    { name: "Picture 2", picture: "https://cdn.blueswandaily.com//2018/11/Travel000-2000x1200.jpg", userId: 1 },
+    { name: "Picture 3", picture: "https://specials-images.forbesimg.com/imageserve/5ddb53922c886a0007ecfddd/960x0.jpg?cropX1=119&cropX2=2001&cropY1=0&cropY2=1411", userId: 1 },
+    { name: "Picture 4", picture: "https://onestep4ward.com/wp-content/uploads/2019/06/Travel.jpg", userId: 1 },
+    { name: "Picture 5", picture: "https://cdn.blueswandaily.com//2018/11/Travel000-2000x1200.jpg", userId: 1 },
+    { name: "Picture 6", picture: "https://specials-images.forbesimg.com/imageserve/5ddb53922c886a0007ecfddd/960x0.jpg?cropX1=119&cropX2=2001&cropY1=0&cropY2=1411", userId: 1 } ]
     const images = imageDescriptions.map(imageDescription => Image.create(imageDescription));
     return Promise.all(images);
   })
 .catch(console.error)
+
