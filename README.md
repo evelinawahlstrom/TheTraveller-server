@@ -20,7 +20,7 @@ I wanted to create a "instagram for travellers". I myself, love to travel and co
 - **[Features working](#features-working)**
 
 ## Technologies used:
-- Express, Sequelize, bcrypt, cors, pg 
+- Node js, Express, Sequelize, bcrypt, cors, pg 
 
 ## How to install
 
