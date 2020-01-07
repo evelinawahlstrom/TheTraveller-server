@@ -14,12 +14,19 @@ router.get("/images", authMiddleWare, (req, res, next) => {
   });
 
   // Get an image by id
-router.get("/images/:imageId", authMiddleWare, (req, res, next) => {
-    Image.findByPk(req.params.imageId)
+router.get("/images/:id", authMiddleWare, (req, res, next) => {
+    Image.findByPk(req.params.id)
       .then(image => {
         res.send(image);
       })
       .catch(next);
   });
+
+// upload a new image
+router.post("/images", authMiddleWare, (req, res, next) => {
+    Image.create(req.body)
+      .then(image => res.json(image))
+      .catch(next)
+});
 
   module.exports= router
