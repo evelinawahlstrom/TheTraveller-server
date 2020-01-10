@@ -1,6 +1,7 @@
 const { Router } = require("express")
 const Image = require("./model")
 const authMiddleWare = require("../auth/middleware");
+const Description  = require ('../descriptions/model')
 
 const router = new Router();
 
@@ -15,7 +16,7 @@ router.get("/images", authMiddleWare, (req, res, next) => {
 
   // Get an image by id
 router.get("/images/:id", authMiddleWare, (req, res, next) => {
-    Image.findByPk(req.params.id)
+    Image.findByPk(req.params.id, { include: Description })
       .then(image => {
         res.send(image);
       })
