@@ -7,11 +7,6 @@ const Description = db.define("description", {
         type: Sequelize.STRING,
         allowNull: false,
       },
-        date: {
-         type: Sequelize.DATE,
-         default: Date.now,
-         allowNull: false
-        }
       });
 
 Description.belongsTo(Image, { onDelete: 'CASCADE' }) 

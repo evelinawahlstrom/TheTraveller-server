@@ -6,10 +6,9 @@ const router = new Router()
 
 // Add a new description
 router.post("/images/:id", authMiddleWare, (req, res, next) => {
-    const { text,date, imageId } = req.body;
+    const { text, imageId } = req.body;
     Description.create({
     text,
-    date,
     imageId
     })
       .then(description => res.json(description))
