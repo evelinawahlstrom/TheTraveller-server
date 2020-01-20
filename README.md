@@ -22,9 +22,9 @@ I wanted to create a "instagram for travellers". I myself, love to travel and co
 ## Technologies used:
 - Node js, Express, Sequelize, bcrypt, cors, pg 
 
-**Note** You will need to create a container on your computer for the database. I've used **[Docker](https://www.docker.com/)**
-
 ## How to install
+
+**Note** *You will need to create a container on your computer for the database. I've used* **[Docker](https://www.docker.com/)**
 
 1. Clone this repo 
 
