@@ -22,6 +22,8 @@ I wanted to create a "instagram for travellers". I myself, love to travel and co
 ## Technologies used:
 - Node js, Express, Sequelize, bcrypt, cors, pg 
 
+**Note** You will need to create a container on your computer for the database. I've used **[Docker](https://www.docker.com/)**
+
 ## How to install
 
 1. Clone this repo 
@@ -46,6 +48,12 @@ nodemon index.js
 
 ```
 node index.js
+```
+
+6. Start the database
+
+```
+With the help of docker, connect with the password 'secret'
 ```
 
 As a standard I'm using port 4000 for this server.
