@@ -44,15 +44,6 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 // force: true as long as development is in process
 db.sync({ force: true })
   .then(() => {
-    console.log("Database schema has been updated.");
-
-    const userNames= [
-     { email: "traveller@gmail.com", password: "worldtraveller" },  
-    ]
-    const users = userNames.map(userName => User.create(userName));
-    return Promise.all(users)
-  })
-  .then(() => {
     const imageDescriptions = [
     { name: "Picture 1", picture: "https://onestep4ward.com/wp-content/uploads/2019/06/Travel.jpg", userId: 1 },
     { name: "Picture 2", picture: "https://cdn.blueswandaily.com//2018/11/Travel000-2000x1200.jpg", userId: 1 },
